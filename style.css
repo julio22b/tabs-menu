@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    box-shadow: 0px 3px 10px rgb(87, 87, 87);
+    position: sticky;
+    top: 0px;
+    background: white;
+}
+
+nav{
+    width: 100%;
+}
+
+.tab-list{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tab-list li{
+    flex: 1;
+    text-align: center;
+}
+
+.tab-list li a{
+    text-decoration: none;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em ;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+}
+
+.tab-list li img{
+    margin: 0 auto 5px auto;
+    width: 20%;
+    max-width: 50px;
+}
+
+.selector{
+    position: absolute;
+    z-index: -2;
+    background: hsl(0, 0%, 93%);
+    transition: all 0.5s ease;
+}
+
+section{
+    width: 100%;
+    margin: 0 0 5em 0;
+    background-color: rgb(233, 214, 214);
+    height: 100vh;
+    display: flex;
+    text-align: center;
+}
+
+.products{
+    background: #06beb6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right top, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right top, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.contact{
+    background: #642B73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right top, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right top, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.about{
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right top, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right top, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
